@@ -79,24 +79,16 @@ function prepare() {
 #TOOLKIT_VER="7.0"
 #TOOLCHAIN_VER="7.0-41890"
 #GCCLIB_VER="gcc750_glibc226"
-#prepare
-#echo "Building ${TOOLKIT_VER}"
-#docker image rm fbelavenuto/syno-compiler:${TOOLKIT_VER} >/dev/null 2>&1
-#docker buildx build . --load --tag fbelavenuto/syno-compiler:${TOOLKIT_VER}
 
 # 7.1
-# TOOLKIT_VER="7.1"
-# TOOLCHAIN_VER="7.1-42661"
-# GCCLIB_VER="gcc850_glibc226"
-# prepare
-# echo "Building ${TOOLKIT_VER}"
-# docker image rm fbelavenuto/syno-compiler:${TOOLKIT_VER} >/dev/null 2>&1
-# docker buildx build . --load --tag fbelavenuto/syno-compiler:${TOOLKIT_VER}
+TOOLKIT_VER="7.1"
+TOOLCHAIN_VER="7.1-42661"
+GCCLIB_VER="gcc850_glibc226"
 
 # 7.2
-TOOLKIT_VER="7.2"
-TOOLCHAIN_VER="7.2-63134"
-GCCLIB_VER="gcc1220_glibc236"
+# TOOLKIT_VER="7.2"
+# TOOLCHAIN_VER="7.2-63134"
+# GCCLIB_VER="gcc1220_glibc236"
 prepare
 echo "V${TOOLKIT_VER} building in progress"
 
